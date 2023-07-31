@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rdtest</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="navbar">
+          <div>
+            <!--see script.js line 44-->
+            <ul class="navbar__list"></ul>
+          </div>
+        </nav>
+
+        <div class="header__main">
+          <div class="header__inner">
+            <nav class="menu-mobile dropdown">
+              <button class="menu-mobile__btn dropbtn"></button>
+              <div class="dropdown-content">
+                <!--see script.js line 45-->
+                <ul class="menu-mobile__list"></ul>
+              </div>
+            </nav>
+            <div class="header__logo-block">
+              <a href="#" class="logo">
+                <img
+                  src="./img/logo.png"
+                  srcset="./img/logo@2x.png 2x"
+                  alt="logo"
+                />
+              </a>
+              <div>
+                <h1>Столовая.РУ</h1>
+                <p>Создание пищеблоков</p>
+              </div>
+            </div>
+            <div class="search-field">
+              <div class="search-field__block">
+                <div class="dropdown">
+                  <div class="before-search">
+                    <span>Все</span>
+                    <img src="img/arrow-down.svg" alt="" />
+                  </div>
+                  <!--see script.js line 86-->
+                  <ul class="dropdown-content"></ul>
+                </div>
+                <input
+                  class="search-field__input"
+                  type="search"
+                  name="find"
+                  id="find"
+                  placeholder=""
+                  value=""
+                  list="appliances"
+                />
+                <!--see script.js line 96-->
+                <datalist id="appliances"> </datalist>
+
+                <div class="search-field__magnifier">
+                  <img src="img/search.svg" alt="search magnifier" />
+                </div>
+              </div>
+            </div>
+            <div class="search-magnifier_mobile">
+              <img src="img/search.png" alt="search magnifier" />
+            </div>
+            <div class="phone-handle_mobile">
+              <img src="img/phone-handle.png" alt="phone handle" />
+            </div>
+            <div class="portal-field">
+              <a href="#" class="supplier-portal">
+                <img
+                  src="./img/supplier-portal.png"
+                  alt="supplier portal icon"
+                />
+              </a>
+              <div>
+                <p>Мы на портале</p>
+                <p>поставщиков</p>
+              </div>
+            </div>
+            <div class="shopping-cart">
+              <div class="shopping-cart__block">
+                <p class="shopping-cart__qty">12</p>
+                <a href="#" class="shopping-cart__icon">
+                  <img src="./img/shoppingcart.png" alt="shopping cart icon" />
+                  <img src="./img/shopping-cart.png" alt="shopping cart icon" />
+                </a>
+              </div>
+              <div class="shopping-cart__sum">
+                <p>Сумма</p>
+                <p class="shopping-cart__number">150 000 руб.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="equipment">
+          <!--see script.js line 99-->
+          <div class="equipment__list"></div>
+        </div>
+
+        <div class="equip-menu-mobile dropdown">
+          <div class="equip-menu-mobile__inner">
+            <span>Оборудование</span>
+            <span>&#707;</span>
+          </div>
+          <!--see script.js line 87-->
+          <ul class="dropdown-content"></ul>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="intro">
+            <div class="targeted-offers">
+              <h2>Целевые предложения</h2>
+              <!--see script.js line 180-->
+              <div class="targeted-offers__items"></div>
+            </div>
+            <div class="portfolio">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="portfolio__slide swiper-slide">
+                    <div class="portfolio__slide-inner">
+                      <div class="portfolio__slide-text">
+                        <h2>Портфолио</h2>
+                        <!-- prettier-ignore -->
+                        <p>НИИ скорой помощи 
+                          им. Н.В. Склифосовского</p>
+                        <div>Оборудование для пищеблоков</div>
+                        <button>Подробнее</button>
+                      </div>
+                      <div class="portfolio__slide-image">
+                        <img
+                          src="./img/slides/equip1.png"
+                          srcset="./img/slides/equip1@2x.png 2x"
+                          alt="equipment photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__slide swiper-slide">
+                    <div class="portfolio__slide-inner">
+                      <div class="portfolio__slide-text">
+                        <h2>Портфолио</h2>
+                        <!-- prettier-ignore -->
+                        <p>Комбинат питания 
+                          МФТИ Проектирование</p>
+                        <div>Комплексное снабжение</div>
+                        <button>Подробнее</button>
+                      </div>
+                      <div class="portfolio__slide-image">
+                        <img
+                          src="./img/slides/equip2.png"
+                          srcset="./img/slides/equip2@2x.png 2x"
+                          alt="equipment photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__slide swiper-slide">
+                    <div class="portfolio__slide-inner">
+                      <div class="portfolio__slide-text">
+                        <h2>Портфолио</h2>
+                        <!-- prettier-ignore -->
+                        <p>Городская больница 
+                          им. Филатова</p>
+                        <div>Проектирование предприятий</div>
+                        <button>Подробнее</button>
+                      </div>
+                      <div class="portfolio__slide-image">
+                        <img
+                          src="./img/slides/equip.png"
+                          srcset="./img/slides/equip@2x.png 2x"
+                          alt="equipment photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio__slide swiper-slide">
+                    <div class="portfolio__slide-inner">
+                      <div class="portfolio__slide-text">
+                        <h2>Портфолио</h2>
+                        <p>Ресторан "Седьмое небо"</p>
+                        <p>Проектирование</p>
+                        <div>Комплексное снабжение</div>
+                        <button>Подробнее</button>
+                      </div>
+                      <div class="portfolio__slide-image">
+                        <img
+                          src="./img/slides/equip7.png"
+                          srcset="./img/slides/equip7@2x.png 2x"
+                          alt="equipment photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sale">
+              <div>
+                <img src="./img/giftbox.png" alt="giftbox" />
+                <p>Самые низкие цены</p>
+                <p>Распродажа</p>
+                <a href="#!">Каталог распродаж &nbsp; <span>&#707;</span></a>
+              </div>
+            </div>
+          </div>
+          <!--see script.js line 212-->
+          <div class="brands">
+            <div class="all-brands">
+              <div class="">
+                <a href="#">Все бренды</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news">
+          <div class="news__head">
+            <h2>Новости производителей</h2>
+          </div>
+          <div class="news__main">
+            <div class="bakerRack-item">
+              <img
+                src="./img/bakerRack.png"
+                srcset="./img/bakerRack@2x.png 2x"
+                alt="baker's rack"
+              />
+              <div class="trademark-and-date">
+                <p class="trademark">Abat</p>
+                <p class="date">22.06.17</p>
+              </div>
+              <h3>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР</h3>
+              <!-- prettier-ignore -->
+              <p>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР: в
+                комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм
+                вместимость тележки-шпильки - 135 хлебных форм №7 
+                инжекционный тип парообразования 
+                разборная конструкция увеличенное стекло двери. 
+                Память на 110 программ (до 4-ех этапов в каждой программе) 
+                USB-порт. Таймер до 10 ч 
+                Регулировка влажности от 0 до 100%. 5 скоро
+              </p>
+            </div>
+            <div>
+              <!--see script.js line 235-->
+              <div class="news__item"></div>
+              <div class="news__item item_short"></div>
+              <div class="news__item"></div>
+            </div>
+          </div>
+          <button class="news__btn">Все новости</button>
+        </section>
+        <section class="info">
+          <div class="info__head">
+            <h2>Рекомендуем</h2>
+            <!-- prettier-ignore -->
+            <p>В этих разделах вы можете получить подробную информацию о пищевом оборудовании 
+              <span></span>для столовых, ресторанов и кафе <span></span>ведущих производителей.
+            </p>
+          </div>
+          <div class="info__main">
+            <div class="rational">
+              <div class="info__text rational__text">
+                <!--see style.css line 711 and 1236-->
+                <p></p>
+                <h3>Пароконвектоматы</h3>
+                <!--see style.css line 732 and 1243-->
+                <p></p>
+              </div>
+              <div class="rational__img">
+                <img
+                  src="./img/info/equip6.png"
+                  srcset="./img/info/equip6@2x.png 2x"
+                  alt="equipment photo"
+                />
+              </div>
+            </div>
+            <div class="abat">
+              <div class="abat__img">
+                <img
+                  src="./img/info/equip3.png"
+                  srcset="./img/info/equip3@2x.png 2x"
+                  alt="equipment photo"
+                />
+              </div>
+              <div class="info__text abat__text">
+                <p>abat</p>
+                <!-- prettier-ignore -->
+                <h3>Тепловое 
+                  оборудование</h3>
+                <!-- prettier-ignore -->
+                <p>Более 55 лет успешно работает на рынке
+                  торгово-технологического оборудования, по праву 
+                  занимая лидирующее положение в данном сегменте.
+                </p>
+              </div>
+            </div>
+            <div class="hicold">
+              <div class="info__text hicold__text">
+                <!--see style.css line 782 and 1275-->
+                <p></p>
+                <!--see style.css line 785 and 1275-->
+                <p></p>
+                <!--see style.css line 788 and 1278-->
+                <p></p>
+              </div>
+              <div class="hicold__img">
+                <img
+                  src="./img/info/equip8.png"
+                  srcset="./img/info/equip8@2x.png 2x"
+                  alt="equipment photo"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__intro">
+            <a href="#!" class="about__logo">
+              <img
+                src="./img/logo.png"
+                srcset="./img/logo@2x.png 2x"
+                alt="logo"
+              />
+            </a>
+            <h2>Столовая.РУ</h2>
+            <p>создание оптимальных пищеблоков</p>
+            <p>Группа компаний</p>
+            <p>Показатели:</p>
+            <!-- prettier-ignore -->
+            <p>На рынке: 5 лет
+               Объем контрактов: 4 млрд.р. 
+               Количество контрактов: 620</p>
+          </div>
+          <div class="about__desc">
+            <div class="about__story">
+              <h2>Комплексные решения оснащения столовых и кафе</h2>
+              <!-- prettier-ignore -->
+              <p>Компания<span> «Диалог»</span> предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши
+                услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса
+                HoReCa.<span></span> 
+                Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. 
+                География работы компании охватывает всю страну. При этом в каждом регионе мы готовы 
+                предложить демократичные цены на профессиональное технологическое оборудование для 
+                столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем 
+                производительности в условиях ограниченного бюджета.
+              </p>
+            </div>
+            <div class="about__propose">
+              <h2>Что мы предлагаем</h2>
+              <!-- prettier-ignore -->
+              <p>разработку технологического проекта кухни и производственной линии, дизайна ресторанного 
+                интерьера;
+                составление меню согласно концепции и оснащения бара (кафе, столовой);
+                подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и 
+                ресторана, большой выбор современных моделей; доставку в любой регион РФ;
+                монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет 
+                определённое оборудование для бара;
+              </p>
+            </div>
+            <div class="plus"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="footer__item">
+            <h2>Информация</h2>
+            <button>+</button>
+            <!--See script.js line 55-->
+            <ul class="footer__menu-list"></ul>
+          </div>
+          <div class="footer__item">
+            <h2>Оборудование</h2>
+            <button>+</button>
+            <!--See script.js line 156-->
+            <ul class="footer__equip-list"></ul>
+          </div>
+          <div class="footer__item">
+            <h2>Предложения</h2>
+            <button>+</button>
+            <!--See script.js line 171-->
+            <ul class="footer__offers"></ul>
+          </div>
+          <div class="footer__item">
+            <h2>Контакты</h2>
+            <button>+</button>
+            <ul class="contacts">
+              <li>8 495 150-31-71</li>
+              <li>8 800 500 43 44</li>
+              <li>звонок бесплатный</li>
+              <li>Пн-Пт</li>
+              <li>09:00 до 18:00</li>
+              <li>com@stolovay.ru</li>
+              <li>info@stolovay.ru</li>
+              <li>111524, Москва,</li>
+              <li>Рязанский проспект 24к2</li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h2>Реквизиты</h2>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container">
+            <div class="footer__logo-block">
+              <a href="#">
+                <img
+                  src="./img/logo.png"
+                  srcset="./img/logo@2x.png 2x"
+                  alt="logo"
+                />
+              </a>
+              <div>
+                <h2>Столовая.РУ</h2>
+                <p>Создание оптимальных пищеблоков</p>
+              </div>
+            </div>
+            <p>Сайт разработан NTI-systems</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js" async></script>
+  </body>
+</html>
